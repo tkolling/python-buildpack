@@ -5,6 +5,9 @@ url_to_dependency_map:
   - match: python-(\d+\.\d+\.\d+)
     name: python
     version: $1
+  - match: pypy-(\d+\.\d+\.\d+)
+    name: pypy
+    version: $1
   - match: libmemcache
     name: libmemcache
     version: 1.0.18
@@ -67,6 +70,12 @@ dependencies:
       - cflinuxfs2
     uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/python/python-3.5.0-linux-x64.tgz
     md5: 147e08c5c5ed5bbcaabb6ba0e8625fcc
+  - name: pypy
+    version: 2.4.0
+    cf_stacks:
+      - cflinuxfs2
+    uri: https://bitbucket.org/pypy/pypy/downloads/pypy3-2.4.0-linux64.tar.bz2
+    md5: 63bd68546f60cf5921ba7654f3fe47aa
 exclude_files:
   - .git/
   - .gitignore
