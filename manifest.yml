@@ -71,11 +71,11 @@ dependencies:
     uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/python/python-3.5.0-linux-x64.tgz
     md5: 147e08c5c5ed5bbcaabb6ba0e8625fcc
   - name: pypy
-    version: 2.4.0
+    version: 4.0.1
     cf_stacks:
       - cflinuxfs2
-    uri: https://bitbucket.org/pypy/pypy/downloads/pypy3-2.4.0-linux64.tar.bz2
-    md5: 63bd68546f60cf5921ba7654f3fe47aa
+    uri: https://bitbucket.org/squeaky/portable-pypy/downloads/pypy-4.0.1-linux_x86_64-portable.tar.bz2
+    md5: 2bab8cddb575adfc6ff4199d100117ee
 exclude_files:
   - .git/
   - .gitignore
